@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="../style.css">
+    <title>Store</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<header th:insert="blocks/header :: header"></header>
+<div class="container">
+    <div th:each="el : ${customers}" class="card">
+        <a th:href="${el.id}">${el.id}</a>
+        <h3 th:text="${el.name}"></h3><br>
+        <h3 th:text="${el.username}"></h3>
+    </div>
+</div>
+</body>
+</html>

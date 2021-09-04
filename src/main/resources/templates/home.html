@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link href="..static/css/style.css" th:href="@{/static/css/style.css}" rel="stylesheet" />
+    <title>Store</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <header>
+        <div class="store">Store</div>
+    </header>
+<div class="tab">
+    <a href="goods">Goods</a><br>
+    <a href="staff">Staff</a><br>
+    <a href="customers">Customers</a><br>
+</div>
+<p th:text="'Hello, ' + ${title} + '!'"/>
+</body>
+</html>
